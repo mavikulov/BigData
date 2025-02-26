@@ -25,6 +25,8 @@ st.subheader("Онлайн-визуализация MSE и MAE")
 
 chart_holder_mse = st.empty()
 chart_holder_mae = st.empty()
+column_mse = st.empty()
+column_mae = st.empty()
 
 def visualize():
     while True:
@@ -42,8 +44,13 @@ def visualize():
                 st.subheader("График MAE")
                 st.line_chart(st.session_state["MAE"], height=300)
 
-            st.sidebar.metric(label="Последнее значение MSE", value=round(st.session_state["MSE"][-1], 2))
-            st.sidebar.metric(label="Последнее значение MAE", value=round(st.session_state["MAE"][-1], 2))
+            with column_mse:
+                st.metric(label="Последнее значение MSE", value=round(st.session_state["MSE"][-1], 2))
+
+            with column_mae:
+                st.metric(label="Последнее значение MAE", value=round(st.session_state["MAE"][-1], 2))
+            #st.sidebar.metric(label="Последнее значение MSE", value=round(st.session_state["MSE"][-1], 2))
+            #st.sidebar.metric(label="Последнее значение MAE", value=round(st.session_state["MAE"][-1], 2))
 
 
 if __name__ == "__main__":
