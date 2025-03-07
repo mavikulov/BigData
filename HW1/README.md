@@ -27,6 +27,12 @@ python3 ML.py
 python3 app.py
 ```
 Для завершения необходимо убить все раннее запущенные python-процессы (``Ctrl + C)``
+
+Затем выполнить:
+```
+docker-compose down
+```
+
 ## Результат
 Streamlit Dashboard находится на: http://localhost:8501
 ![dashboard](data/dashboard.jpg)
