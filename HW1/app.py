@@ -49,8 +49,6 @@ def visualize():
 
             with column_mae:
                 st.metric(label="Последнее значение MAE", value=round(st.session_state["MAE"][-1], 2))
-            #st.sidebar.metric(label="Последнее значение MSE", value=round(st.session_state["MSE"][-1], 2))
-            #st.sidebar.metric(label="Последнее значение MAE", value=round(st.session_state["MAE"][-1], 2))
 
 
 if __name__ == "__main__":
