@@ -17,7 +17,7 @@
 ├── 📄 hadoop.env
 ├── 🐳 Dockerfile				
 ├── 🐙 docker-compose-3d.yml
-├──	🐙 docker-compose.yml					
+├── 🐙 docker-compose.yml					
 ├── 📂 data							
 │   └── 📊 diabetes_prediction_dataset.csv						
 ├── 📂 results		
